@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25,25,25);
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-image: url('../img/planoDeFundocontatos.png');
+    background-size:cover;
+    background-position:100%;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-color: black;
+}
+html {
+    overflow-y: scroll; /* Força a barra de rolagem vertical sempre visível */
+}
+header{
+    background-color: rgb(0, 0, 0);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+li{
+    list-style: none;
+    color: #1166db;
+    cursor: pointer;
+    font-size: 19px;
+    transition:.5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: bold;
+    background-color: black;
+}
+li:hover{
+    color: #3af17b;
+}
+#logo{
+    width: 150px;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+#contact_container{  
+    display: flex;
+    gap: 50px;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px;
+    justify-content:space-between;
+    border: 5px solid #3af17b;
+}
+.redes_sociais_box{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+h1 {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color:#1166db;
+    width: 75%;
+    margin-left: 65px;
+    text-align: center;
+}
+h2{
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: #1166db;
+    align-items: center;
+    width: 35%;
+    margin-left: 185px;
+}
+.redes_sociais_links{
+    width: 96%;
+    background-color: rgb(0, 0, 0);
+}
+.redes_sociais_links ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    width: 100%;
+
+    
+}
+.redes_sociais_links li{
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 100px;
+}
+.redes_sociais_links a{
+    font-size: 45px;
+    color:#1166db;
+    background-color:rgb(0, 0, 0);
+    transition: 0.25s;
+    cursor:pointer;
+    width: 150px;
+    height: 150px;
+}
+.redes_sociais_links a:hover{
+    color: #3af17b;
+}
+.redes_sociais_links i{
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70px;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right:10px;
+    transition: 0.25s;
+
+}
+.redes_sociais_links i:hover{
+    transform:scale(1.1);  
+    box-shadow: 0 5px 10px rgba(67, 205, 70, 0.671);
+}
+.form_container{
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 15px;
+}
+.span1{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color:#1166db;
+}
+form{
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+label{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+input{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: rgb(255, 255, 255);
+    height:30px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+textarea {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 5px;
+    resize: vertical; /* permite que o usuário aumente se quiser */
+    padding: 8px;
+    font-weight: bold;
+}
+button{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color:#1166db;
+    transition: 0.5s;
+    cursor:pointer;
+    font-size: 19px;
+}
+button:hover{
+    transform:scale(1.0099);  
+    color:#3af17b;
+    box-shadow: 0 5px 10px #3af17b;
+}
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.800);
+    color: #1166db; 
+    padding-bottom: 25px;
+}
+#logo2{
+    background-color: rgba(255, 255, 255, 0.221);
+    width: 250px;
+    height:auto;
+}
+.span_footer{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.068);
+    color:#1166db;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+.footer_navegation{
+    display: none;
+    justify-content: space-between;
+
+}
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 768px){
+    .footer_navegation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #contact_container{
+        display:flex;
+        flex-direction: column;
+        height:1050px;
+        width: 400px;
+    }  
+    h1{
+        margin: 0;
+    }
+    h2{
+        margin: 0;
+        width: 50%;
+        margin-left: 10px;
+    }
+    .redes_sociais_box{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        align-items:center;
+    }
+    .redes_sociais_links{
+        width: 85%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-right: 100px;
+    }
+    .form_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
