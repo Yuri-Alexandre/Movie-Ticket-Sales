@@ -46,12 +46,17 @@ li:hover{
     width: 150px;
     height:auto;
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+a{
+    background-color:black;
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.9rem;
     margin: 100px;
+    flex-wrap: wrap;
 
 }
 .card{
@@ -69,6 +74,7 @@ li:hover{
 .card:hover{
     box-shadow: 0 5px 10px #3af17a;
 }
+
 .user{
     width: 200px;
     height: 200px;
@@ -88,17 +94,20 @@ h{
     padding: 15px;
     border-radius: 10px;
 }
-
+.coment{
+    min-height: 380px; /* define altura mínima */
+}
 p{
     background-color: #1166db;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     color: rgb(0, 0, 0);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.663);
     border-radius: 10px;
-    padding: 15px;
+    padding: 25px 5px;
     border: 2px solid #3af17b;
 }
+
 footer{
     height: 300px;
     margin-top: 50px;
@@ -110,7 +119,7 @@ footer{
     color: #1166db; 
     padding-bottom: 25px;
 }
-#logo2{
+.footer_logo{
     background-color: rgba(0, 0, 0);
     width: 250px;
     height:auto;
@@ -132,14 +141,21 @@ footer{
     align-items: center;
 }
 @media(max-width: 768px){
+    footer{
+        height: 400px;
+    }
     .footer_navegation{
         display: block;
     }
     nav{
         display: none;
     }
+    ul{
+        padding-bottom: 20px;
+    }
     .cards{
         display: flex;
         flex-direction: column;
+        margin: 10px;
     }
 }

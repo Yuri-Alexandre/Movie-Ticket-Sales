@@ -45,7 +45,11 @@ li:hover{
 #logo{
     width: 150px;
     height:auto;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0);
+    cursor: pointer;
+}
+a{
+    background-color:black;
 }
 #banner{
   width: 100%;
@@ -59,16 +63,18 @@ li:hover{
     height:400px;
     display:flex;
     justify-content: center;
+    
 
 }
 .content{
-    width:70%;
+    width:90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 .trailer{
-    width: 50%;
+    width: 40%;
 }
 #sinopse{
     width: 100%;
@@ -77,17 +83,19 @@ li:hover{
     justify-content: space-between;
     margin-left: 30px;
     text-align:justify;
+    flex: 1;                  /* Faz ocupar o espaço disponível */
+    min-width: 250px;        /* Impede ficar muito estreito */
 }
 .description{
+    max-height: auto;
     color: #fff;
     font-size: 19px;
     font-family: "Kdam Thmor Pro", sans-serif;
-    width: 95%;
-    margin-top: 25px;
+    
 }
 .button{
-    width:95%;
-    height: 60px;
+    width:100%;
+    height: 50px;
     background-color: #1166db;
     color: #fff;
     padding: 8px 10px;
@@ -159,7 +167,7 @@ footer{
     color: #1166db; 
     padding-bottom: 25px;
 }
-#logo2{
+.footer_logo{
     background-color: rgba(0, 0, 0);
     width: 250px;
     height:auto;
@@ -176,13 +184,18 @@ footer{
 
 }
 .footer_list{
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 @media(max-width: 768px){
+    footer{
+        height: 400px;
+    }
     .footer_navegation{
         display: block;
+        margin-bottom: 25px;
     }
     nav{
         display: none;
