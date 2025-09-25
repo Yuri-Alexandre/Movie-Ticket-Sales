@@ -234,6 +234,7 @@ footer{
 @media (max-width: 768px) {
     footer{
         height: 400px;
+        vertical-align: baseline;
     }
     .footer_navegation {
         display: block;   
@@ -258,24 +259,32 @@ footer{
     #contact_container {
         display: flex;
         flex-direction: column;
-        width: 100%;       /* Ajusta à tela */
+        width: 90%;       /* Ajusta à tela */
         max-width: 400px;  /* Limite máximo */
         margin: 20px auto;    /* Centraliza */
         padding: 20px;
+        gap: 10px;
+    }
+    .redes_sociais_links li{
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    height: 80px;
     }
     h1 {
         margin: 0;
         width: 90%;
         text-align: center;
+        font-size: 20px;
     }
     h2 {
         margin: 0;
         width: 80%;
-        font-size: 30px;   /* tamanho proporcional */
+        font-size: 20px;   /* tamanho proporcional */
         text-align: center;
     }
     .redes_sociais_box {
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -290,16 +299,26 @@ footer{
         margin: 0 auto;
     }
     .redes_sociais_links a {
-        width: 40px;       /* diminui a largura do link */
-        height: 40px;      /* diminui a altura do link */
-        font-size: 30px;   /* diminui o ícone dentro do link */
+        width: 20px;       /* diminui a largura do link */
+        height: 20px;      /* diminui a altura do link */
+        font-size: 15px;   /* diminui o ícone dentro do link */
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .redes_sociais_links i{
+        font-size: 30px;
+        margin-left: 150px;
+        align-items: center;
+        justify-content: center;
+     
     }
     .form_container {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .span1{
+        font-size: 15px;
     }
 }
